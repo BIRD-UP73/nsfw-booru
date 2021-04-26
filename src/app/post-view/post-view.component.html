@@ -1,0 +1,29 @@
+<h1 center>Post</h1>
+
+<div class="post-container">
+    <div class="image-container">
+        <img *ngIf="!post?.video" src="{{post?.fileUrl}}" class="center">
+        <video *ngIf="post?.video" controls src="{{post?.fileUrl}}" type="video/mp4" class="center"></video>
+    </div>
+
+    <div class="post-image">
+        Page {{page}} of {{post?.count}}
+    </div>
+
+    <div class="button-container">
+        <button class="button" (click)="previousPage()">Previous</button>
+        <a class="button" (click)="randomPage()">Random</a>
+        <a class="button" (click)="nextPage()">Next page</a>
+    </div>
+
+    <div class="box">
+        <h2 class="is-size-3">Tags</h2>
+        <span class="tag is-info" *ngFor="let tag of post.tags.trim().split(' ')">
+            {{tag}}
+        </span>
+    </div>
+
+    <div class="box">
+        Score: {{post.score}}
+    </div>
+</div>

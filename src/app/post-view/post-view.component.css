@@ -1,0 +1,43 @@
+.post-image {
+    text-align:center;
+    margin: auto;
+    width: 50%;
+    display: block;
+}
+
+img {
+    text-align:center;
+    width:50%;
+    display:block;
+    margin:auto;
+}
+
+.box {
+    margin: 10px;
+}
+
+.button-container {
+    margin: auto;
+}
+
+.post-container {
+    width: 75%;
+    position: absolute;
+    top: 50%;
+    left: 12.5%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.page-container {
+    margin-left: auto;
+}
+
+.box {
+    width: 50%;
+    margin: auto;
+}
+
+.tag {
+    margin: 2px;
+}
